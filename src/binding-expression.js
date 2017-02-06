@@ -47,7 +47,7 @@ export class Binding {
     this.sourceExpression.assign(this.source, value, this.lookupFunctions);
   }
 
-  call(context, newValue, oldValue) {
+  callSource(context, newValue, oldValue) {
     if (!this.isBound) {
       return;
     }
